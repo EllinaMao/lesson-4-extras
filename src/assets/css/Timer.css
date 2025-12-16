@@ -1,0 +1,13 @@
+.timer {
+  border: 3px solid #646cff;
+  border-radius: 12px;
+  padding: 5px;
+
+  width: 120px;
+}
+
+.timer {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
