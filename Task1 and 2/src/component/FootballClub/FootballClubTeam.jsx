@@ -4,8 +4,8 @@ import RenderList from "./RenderList";
 function FootballClubTeam(props) {
   const { players } = props;
   return (
-    <div className="footballClub">
-      <h3>Состав команды</h3>
+    <div className="club-card">
+      <h4>Состав команды</h4>
       <RenderList
         items = {players}
         renderItem={(item)=> `${item.name} - ${item.position} (#${item.number})`}
