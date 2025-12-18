@@ -7,26 +7,56 @@ import clubLogo from "./assets/images/clubLogo.svg";
 import Header from "./component/Header.jsx";
 
 function App() {
-
   const medals = [
-    "Золотая медаль - 2011",
-    "Серебряная медаль - 2013",
-    "Бронзовая медаль - 2016",
-  ]
-  const trophies = [
-    "Кубок Чемпионов - 2011",
-    "Кубок Лиги - 2013",
-    "Суперкубок - 2016",
+    {
+      medal: "Золотая медаль",
+      year: 2011,
+    },
+    {
+      medal: "Серебряная медаль",
+      year: 2013,
+    },
+    { medal: "Бронзовая медаль", year: 2016 },
   ];
+
+  const trophies = [
+    {
+      trophy: "Кубок Чемпионов",
+      year: 2011,
+    },
+    {
+      trophy: "Кубок Лиги",
+      year: 2013,
+    },
+    { trophy: "Суперкубок", year: 2016 },
+  ];
+
   const goals = [
-    "Лучший бомбардир сезона 2010 - 53 голов",
+    {
+      player: "Денис Карбальен",
+      goals: 120,
+    },
+    {
+      player: "Игорь Саркисов",
+      goals: 98,
+    },
   ];
   const players = [
-    "Денис Карбальен",
-    "Игорь Саркисов",
-    "Чарло Педорони",
-    "Ичиро Накамура",
-    "Явор Гринвов",
+    {
+      name: "Денис Карбальен",
+      position: "Нападающий",
+      number: 9,
+    },
+    {
+      name: "Игорь Саркисов",
+      position: "Полузащитник",
+      number: 10,
+    },
+    {
+      name: "Максим Левицкий",
+      position: "Защитник",
+      number: 5,
+    },
   ];
 
   const clubInfo = {
@@ -34,22 +64,29 @@ function App() {
     city: "Odessa",
     founded: "2005",
     logo: clubLogo,
-    players: players,
-    goals: goals,
-    trophies: trophies,
-    medals: medals,
-
-  }
+    players,
+    goals,
+    trophies,
+    medals,
+  };
 
   return (
     <div className="App">
-
       <Header title={"время на сайте"}>
         <Timer />
       </Header>
 
-      <FootballClub name={clubInfo.name} city={clubInfo.city} founded={clubInfo.founded} logo={clubInfo.logo} />
-      <FootballClubAchievements medals={clubInfo.medals} trophies={clubInfo.trophies} goals={clubInfo.goals} />
+      <FootballClub
+        name={clubInfo.name}
+        city={clubInfo.city}
+        founded={clubInfo.founded}
+        logo={clubInfo.logo}
+      />
+      <FootballClubAchievements
+        medals={clubInfo.medals}
+        trophies={clubInfo.trophies}
+        goals={clubInfo.goals}
+      />
       <FootballClubTeam players={clubInfo.players} />
     </div>
   );

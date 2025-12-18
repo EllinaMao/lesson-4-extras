@@ -1,6 +1,7 @@
 /**# extra - task 2 
 Первый компонент должен отображать краткую информацию о клубе: название клуба, город, дата основания клуба, герб клуба и т.д.
 */
+import Image from './Image';
 import React from 'react';
 
 function FootballClub(props) {
@@ -17,7 +18,7 @@ function FootballClub(props) {
       </div>
 
       <div className="club-logo-right">
-        <img src={logo} alt={`${name} logo`} className="clubImage" />
+        <Image src={logo} alt={`${name} логотип`} />
       </div>
     </div>
   );
