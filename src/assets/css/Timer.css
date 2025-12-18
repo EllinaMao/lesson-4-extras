@@ -1,13 +1,14 @@
 .timer {
-  border: 3px solid #646cff;
+  box-sizing: border-box;
   border-radius: 12px;
-  padding: 5px;
 
+  height: calc(var(--sizeHeader) - 5px);
   width: 120px;
+  color: white;
 }
 
 .timer {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  right: 3px;
+  top: 3px;
 }

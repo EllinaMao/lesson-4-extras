@@ -4,11 +4,11 @@
 function FootballClubAchievements(props) {
   const { trophies, medals, goals } = props;
   return (
-    <div className="footballClubAchievements">
+    <div className="footballClub">
       <h3>Достижения клуба</h3>
-      <p className="clubTrophies">Кубки: {trophies}</p>
-      <p className="clubMedals">Медали: {medals}</p>
-      <p className="clubGoals">Забитые голы: {goals}</p>
+      <div className="clubTrophies">Кубки: {trophies}</div>
+      <div className="clubMedals">Медали: {medals}</div>
+      <div className="clubGoals">Забитые голы: {goals}</div>
     </div>
   );
 }

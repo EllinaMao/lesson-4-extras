@@ -4,7 +4,7 @@
 function FootballClubTeam(props) {
   const { players } = props;
   return (
-    <div className="footballClubTeam">
+    <div className="footballClub">
       <h3>Состав команды</h3>
       <ul>
         {players.map((player, index) => (

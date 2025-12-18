@@ -1,17 +1,24 @@
 /**# extra - task 2 
 Первый компонент должен отображать краткую информацию о клубе: название клуба, город, дата основания клуба, герб клуба и т.д.
 */
-import Image from "./Image";
+import React from 'react';
 
 function FootballClub(props) {
   const { name, city, founded, logo } = props;
 
   return (
     <div className="footballClub">
-      <h2 className="clubName">{name}</h2>
-      <p className="clubCity">Город: {city}</p>
-      <p className="clubFounded">Основан: {founded}</p>
-        <Image src={logo} alt={`${name} логотип`} />
+      <div className="club-info-left">
+        <h2 className="clubName">{name}</h2>
+        <div className="club-details">
+          <p className="clubCity">Город: {city}</p>
+          <p className="clubFounded">Основан: {founded}</p>
+        </div>
+      </div>
+
+      <div className="club-logo-right">
+        <img src={logo} alt={`${name} logo`} className="clubImage" />
+      </div>
     </div>
   );
 }
