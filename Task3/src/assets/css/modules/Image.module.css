@@ -20,7 +20,7 @@
 .postImage {
 
     width: 100%;  
-    height: auto;     
+    height: var(--post-image-max-size);     
     object-fit: cover; 
     border-radius: 10px;
     border: 2px solid var(--accent-color);
