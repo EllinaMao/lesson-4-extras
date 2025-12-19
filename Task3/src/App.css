@@ -1,0 +1,15 @@
+:root{
+    --primary-color: #ccf7ce;
+    --accent-color: #ddbae0;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+:root{
+    --user-avatar-size: 150px;
+    --post-image-size: 100%;
+    --post-image-max-height: 400px;
+    --sizeHeader: 60px;
+}
+
