@@ -14,25 +14,25 @@
 */
 
 import "./App.css";
+import Header from "./components/Header";
 import PostList from "./components/PostList";
 import UserProfile from "./components/UserProfile";
 import { posts } from "./data";
-import {user} from './data'
+import { user } from "./data";
 
 function App() {
   return (
-    <>
-    <div className="app-header">
-      <h1>Профиль пользователя и его посты</h1>
-    </div>
-      <UserProfile
-        name={user.name}
-        avatar={user.avatar}
-        description={user.bio}
-      />
-      
+    <div className="App">
+      <Header>
+        <UserProfile
+          name={user.name}
+          avatar={user.avatar}
+          description={user.bio}
+          />
+      <hr/>
+      </Header>
       <PostList posts={posts} />
-    </>
+    </div>
   );
 }
 

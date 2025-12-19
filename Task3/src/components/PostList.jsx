@@ -1,11 +1,18 @@
 import RenderList from "./RenderList";
 import PostCard from "./PostCard";
-import "../assets/css/modules/PostList.module.css";
+import styles from "../assets/css/modules/PostList.module.css";
 
-
-function PostList({ posts, className = "post-card" }) {
+function PostList({ posts }) {
   return (
-    <RenderList items={posts} renderItem={PostCard} className={className} />
+    <div className={styles["wrapper"]}> 
+      <RenderList 
+        items={posts} 
+        renderItem={PostCard} 
+        listClassName={styles["feed-container"]} 
+        itemClassName={styles["feed-item"]}
+      />
+    </div>
   );
 }
+
 export default PostList;

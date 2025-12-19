@@ -1,15 +1,20 @@
-import "../assets/css/modules/PostCard.module.css";
-
+import style from "../assets/css/modules/PostCard.module.css"; 
+import Image from "./Image";
 import LikeButton from "./LikeButton";
 
 function PostCard({ title, date, text, image }) {
   return (
-    <article className="post-card">
-      <div className="post-content">
-        <h3 className="post-title">{title}</h3>
-        <span className="post-date">{date}</span>
-        <p className="post-text">{text}</p>
-      <img src={image} alt={title} className="post-image" />
+    <article className={style["post-card"]}>
+      <div className={style["post-content"]}>
+        
+
+            
+        <h3 className={style["post-title"]}>{title}</h3>
+        <span className={style["post-date"]}>{date}</span>
+        <p className={style["post-text"]}>{text}</p>
+        
+        <Image src={image} alt={title} styleName="postImage" />
+        
         <LikeButton />
       </div>
     </article>

@@ -1,9 +1,8 @@
 import "./../assets/css/Header.css";
 
-function Header({ title, children }) {
+function Header({ children }) {
     return (
         <header className="app-header">
-            <h1>{title}</h1>
             {children}
         </header>
     );

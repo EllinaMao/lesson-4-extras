@@ -1,13 +1,19 @@
-function RenderList({ items, renderItem , className = "info-list"}) {
+function RenderList({ 
+    items, 
+    renderItem, 
+    listClassName = "", 
+    itemClassName = ""  
+}) {
   if (!items || items.length === 0) {
     return <p>No items to display.</p>;
   }
+
   return (
-    <ul>
+    <ul className={listClassName}>
       {items.map((item, index) => (
-        <TableCard key={index}>
+        <TableCard key={index} className={itemClassName}>
             {renderItem(item)}
-            </TableCard>
+        </TableCard>
       ))}
     </ul>
   );

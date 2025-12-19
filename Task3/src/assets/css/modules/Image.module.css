@@ -1,20 +1,5 @@
-.image {
-    width:50px;
-    height: auto;
-    object-fit: contain;
 
-    padding: 5px;
-    background-color: #fff; 
-}
-
-.image:hover,
-.user-avatar:hover  {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-
-.user-avatar {
+.avatar {
     width: var(--user-avatar-size);
     height: var(--user-avatar-size);
 
@@ -26,18 +11,21 @@
     box-shadow: var(--shadow);
 }
 
-.user-avatar:hover {
+.avatar:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
 }
 
-.post-image {
-    max-width: var(--post-image-size);
-    max-height: var(--post-image-max-height);
-    object-fit: cover;
+
+.postImage {
+
+    width: 100%;  
+    height: auto;     
+    object-fit: cover; 
     border-radius: 10px;
     border: 2px solid var(--accent-color);
     padding: 5px;
     background-color: #fff;
     box-shadow: var(--shadow);
 }
+

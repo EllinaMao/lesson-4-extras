@@ -1,0 +1,22 @@
+.liked,
+.notLiked {
+
+    border: none    ;
+    cursor: pointer;
+    background: none;
+    font-size: var(--like-button-font-size);
+}
+
+.liked {
+    color: var(--liked);
+}
+
+.notLiked {
+    color: var(--notLiked);
+}
+
+.liked:hover,
+.notLiked:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}

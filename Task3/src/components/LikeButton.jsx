@@ -1,5 +1,7 @@
 import React from "react";
-import "../assets/css/modules/LikeButton.module.css";
+import styles from "../assets/css/modules/LikeButton.module.css";
+
+
 class LikeButton extends React.Component {
   state = { liked: false };
 
@@ -10,9 +12,9 @@ class LikeButton extends React.Component {
     return (
       <button
         onClick={this.handleClick}
-        className={this.state.liked ? "liked" : "not-liked"}
+        className={this.state.liked ? styles.liked : styles.notLiked}
       >
-        {this.state.liked ? "🤍" : "❤️"}
+        ♥
       </button>
     );
   }

@@ -1,0 +1,45 @@
+.user-profile {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  gap: 40px; 
+  
+  align-items: start; 
+
+  padding: 0 40px; 
+  margin-bottom: 40px;
+  
+}
+
+.avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: 400; 
+  margin: 0;
+}
+
+.user-description {
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap; 
+  margin: 0;
+}
+
+
+

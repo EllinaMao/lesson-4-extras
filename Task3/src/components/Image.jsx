@@ -1,8 +1,9 @@
-import "../assets/css/Image.css";
+import styles from "../assets/css/modules/Image.module.css";
 
-function Image({ src = "/vite.svg", alt = "", styles = "image" }) {
+function Image({ src = "/vite.svg", alt = "", styleName = "avatar" }) {
+  const myStyle = styles[styleName];
 
-  return <img className={styles} src={src} alt={alt}/>;
+  return <img className={myStyle} src={src} alt={alt} />;
 }
 
 export default Image;
