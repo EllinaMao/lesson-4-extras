@@ -1,4 +1,4 @@
-:root{
+:root {
   --primary-color: #282c34;
   --secondary-color: #61dafb;
   --font-color: #ffffff;
@@ -11,14 +11,16 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 40px;
+  width: auto;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -27,6 +29,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
