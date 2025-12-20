@@ -1,0 +1,13 @@
+.app-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    
+    margin-bottom: 50px;
+
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    text-align: center;
+    padding: 10px 0;
+}
